@@ -5,10 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript</title>
+    <link rel="expect" blocking="render" href="#title">
+    <link rel="expect" blocking="render" href="#logo">
+    <link rel="expect" blocking="render" href="#link">
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
   </head>
   <body>
     <div id="app"></div>
-    <h1 style="view-transition-name: title;">JavaScript</h1>
+    <h1 id="title" style="view-transition-name: title;">JavaScript</h1>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
